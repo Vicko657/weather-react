@@ -1,0 +1,54 @@
+.Main {
+  padding: 30px 0;
+}
+.Main .weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.Main .weather-app-data strong {
+  color: white;
+}
+.Main .weather-app-city {
+  margin: 0;
+  font-size: 60px;
+  list-style: 48px;
+  font-weight: 300;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: white;
+}
+.Main .weather-app-details {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 200;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: white;
+  margin-top: 20px;
+}
+
+.Main .weather-app-temp-container {
+  display: flex;
+}
+
+.Main .weather-app-icon {
+  width: 88px;
+  height: 88px;
+  margin-top: 10px;
+}
+
+.Main .weather-app-temp {
+  font-size: 120px;
+  line-height: 88px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: white;
+}
+
+.Main .weather-app-unit {
+  margin-top: 0px;
+  font-size: 32px;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  color: white;
+}
+
+strong {
+  font-weight: 500;
+}

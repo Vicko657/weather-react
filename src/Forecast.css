@@ -1,0 +1,38 @@
+.weather-forecast {
+  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+  padding-top: 30px;
+}
+
+.weather-forecast-date {
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature {
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+
+.weather-forecast-bg {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast-icon {
+  width: 80px;
+  display: block;
+  margin: 0 auto;
+}
