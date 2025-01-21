@@ -1,30 +1,77 @@
-import React from "react";
+import React, { use, useState } from "react";
+import axios from "axios";
 import "./Main.css";
 
 export default function Main(props) {
-  return (
-    <main className="Main">
-      <div className="weather-app-data">
-        <div>
-          <h1 className="weather-app-city" id="weather-app-city">
-            {props.city}
-          </h1>
-          <p className="weather-app-details">
-            <span id="time">{props.time}</span>,
-            <span id="description">{props.description}</span>
-            <br />
-            Humidity: <strong id="humidity">{props.humidity}</strong>, Wind:
-            <strong id="wind">{props.wind}</strong>
-          </p>
-        </div>
-        <div className="weather-app-temp-container">
-          <div id="icon">{props.icon}</div>
-          <div className="weather-app-temp" id="temperature">
-            {props.temp}
+  const [weatherData, setWeatherData] = useState({ loaded: false });
+
+  function handleResponse(response) {
+    console.log(response.data);
+    setWeatherData({
+      loaded: true,
+      temperature: Math.round(response.data.main.temp),
+      wind: response.data.wind.speed,
+      city: response.data.name,
+      date: "Monday 17:00",
+      description: response.data.weather[0].description,
+      humidity: response.data.main.humidity,
+      iconUrl:
+        "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png",
+    });
+  }
+
+  if (weatherData.loaded) {
+    return (
+      <div className="Weather">
+        <form className="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            className="search-form-input"
+            id="search-form-input"
+            required
+          />
+          <input type="submit" value="Search" className="search-form-button" />
+        </form>
+        <main className="Main">
+          <div className="weather-app-data">
+            <div>
+              <h1 className="weather-app-city" id="weather-app-city">
+                {weatherData.city}
+              </h1>
+              <p className="weather-app-details">
+                <span id="time">{weatherData.date}</span>,
+                <span className="text-capitalize" id="description">
+                  {weatherData.description}
+                </span>
+                <br />
+                Humidity: <strong id="humidity">{weatherData.humidity}</strong>,
+                Wind:
+                <strong id="wind">{weatherData.wind}</strong>
+              </p>
+            </div>
+            <div className="weather-app-temp-container">
+              <div id="icon">
+                <img
+                  className="weather-app-icon"
+                  src={weatherData.iconUrl}
+                  alt={weatherData.description}
+                />
+              </div>
+              <div className="weather-app-temp" id="temperature">
+                {weatherData.temperature}
+              </div>
+              <div className="weather-app-unit">°C</div>
+            </div>
           </div>
-          <div className="weather-app-unit">°C</div>
-        </div>
+        </main>
       </div>
-    </main>
-  );
+    );
+  } else {
+    const apiKey = "c819171fe0abdc14039af4ef5dda283b";
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
+    axios.get(url).then(handleResponse);
+
+    return "The app is loading..";
+  }
 }
