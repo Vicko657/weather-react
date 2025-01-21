@@ -57,9 +57,8 @@ form .search-form-button {
   display: flex;
 }
 
-.Main .weather-app-icon {
+.weather-app-icon {
   width: 88px;
-  height: 88px;
   margin-top: 10px;
 }
 
