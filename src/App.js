@@ -21,6 +21,7 @@ function App() {
             <img
               className="weather-app-icon"
               src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+              alt="weather-icon"
             />
           }
           temp="5"
