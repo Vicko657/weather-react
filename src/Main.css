@@ -79,3 +79,16 @@ form .search-form-button {
 strong {
   font-weight: 500;
 }
+
+@media (max-width: 900px) {
+  .Main .weather-app-city {
+    font-size: 48px;
+  }
+  .Main .weather-app-temp {
+    font-size: 100px;
+  }
+  .weather-app-icon {
+    width: 66px;
+    margin-top: 10px;
+  }
+}
