@@ -22,12 +22,14 @@ export default function WeatherIcon(props) {
     "50n": "mist",
   };
   return (
-    <img
-      className="weather-app-icon"
-      src={`https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/${
-        codemapping[props.code]
-      }.svg`}
-      alt={props.alt}
-    />
+    <div id="icon">
+      <img
+        className="weather-app-icon"
+        src={`https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/${
+          codemapping[props.code]
+        }.svg`}
+        alt={props.alt}
+      />
+    </div>
   );
 }

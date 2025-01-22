@@ -62,16 +62,19 @@ form .search-form-button {
   margin-top: 10px;
 }
 
-.Main .weather-app-temp {
+.weather-app-temp {
   font-size: 120px;
   line-height: 88px;
   font-family: neue-haas-grotesk-display, sans-serif;
   color: white;
 }
 
-.Main .weather-app-unit {
+.weather-app-unit {
+  display: inline-block;
+  position: absolute;
+  top: 150px;
   margin-top: 0px;
-  font-size: 32px;
+  font-size: 24px;
   font-family: neue-haas-grotesk-display, sans-serif;
   color: white;
 }
@@ -84,11 +87,14 @@ strong {
   .Main .weather-app-city {
     font-size: 48px;
   }
-  .Main .weather-app-temp {
-    font-size: 100px;
+  .weather-app-temp {
+    font-size: 70px;
   }
   .weather-app-icon {
-    width: 66px;
+    width: 55px;
     margin-top: 10px;
+  }
+  .weather-app-unit {
+    font-size: 18px;
   }
 }
