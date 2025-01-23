@@ -55,7 +55,7 @@ form .search-form-button {
 
 .weather-app-icon {
   width: 88px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .weather-app-temp {
@@ -93,7 +93,7 @@ strong {
   }
   .weather-app-icon {
     width: 55px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .weather-app-unit {
     font-size: 18px;
@@ -107,7 +107,7 @@ strong {
   }
   .weather-app-icon {
     width: 55px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   .weather-app-unit {
     font-size: 16px;
