@@ -1,7 +1,6 @@
 import "./App.css";
 import Header from "./Header";
-import Main from "./Main";
-import Forecast from "./Forecast";
+import Weather from "./Weather";
 import Footer from "./Footer";
 
 function App() {
@@ -9,8 +8,8 @@ function App() {
     <div className="container p-2 weather-app">
       <div className="App card p-3">
         <Header />
-        <Main city="London" />
-        <Forecast />
+        <Weather city="London" />
+
         <Footer />
       </div>
     </div>
