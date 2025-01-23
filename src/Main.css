@@ -53,10 +53,6 @@ form .search-form-button {
   margin-top: 20px;
 }
 
-.Main .weather-app-temp-container {
-  display: flex;
-}
-
 .weather-app-icon {
   width: 88px;
   margin-top: 10px;
@@ -70,20 +66,25 @@ form .search-form-button {
 }
 
 .weather-app-unit {
-  display: inline-block;
-  position: absolute;
-  top: 150px;
-  margin-top: 0px;
   font-size: 24px;
   font-family: neue-haas-grotesk-display, sans-serif;
   color: white;
+  position: relative;
+  top: -65px;
+  left: 5px;
+}
+
+.unit {
+  text-decoration: none;
+  color: white;
+  opacity: 0.5;
 }
 
 strong {
   font-weight: 500;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .Main .weather-app-city {
     font-size: 48px;
   }
@@ -96,5 +97,19 @@ strong {
   }
   .weather-app-unit {
     font-size: 18px;
+    top: -36px;
+  }
+}
+
+@media (max-width: 525px) {
+  .Main .weather-app-city {
+    font-size: 48px;
+  }
+  .weather-app-icon {
+    width: 55px;
+    margin-top: 10px;
+  }
+  .weather-app-unit {
+    font-size: 16px;
   }
 }

@@ -6,8 +6,8 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
   return (
     <main className="Main">
-      <div className="weather-app-data">
-        <div className="col-md-9 col-sm-4">
+      <div className="weather-app-data rows">
+        <div className="col-7">
           <h1 className="weather-app-city" id="weather-app-city">
             {props.data.city}
           </h1>
@@ -16,17 +16,19 @@ export default function WeatherInfo(props) {
               <FormattedDate date={props.data.date} />
             </span>
             <span id="description" className="text-capitalize">
+              {" "}
               {props.data.description}
             </span>
             <br />
-            Humidity: <strong id="humidity">{props.data.humidity}</strong>,
-            Wind:
-            <strong id="wind">{props.data.wind}</strong>
+            Humidity: <strong id="humidity">{props.data.humidity} </strong>
+            Wind: <strong id="wind"> {props.data.wind}</strong>
           </p>
         </div>
-        <div className="weather-app-temp-container col-md-3 col-sm-4">
-          <WeatherIcon code={props.data.icon} alt={props.data.description} />
-          <WeatherTemperature celsius={props.data.temperature} />
+        <div className="weather-app-temp-container col-lg-5 col-md-5 col-sm-5">
+          <div className="d-flex justify-content-end">
+            <WeatherIcon code={props.data.icon} alt={props.data.description} />
+            <WeatherTemperature celsius={props.data.temperature} />
+          </div>
         </div>
       </div>
     </main>
