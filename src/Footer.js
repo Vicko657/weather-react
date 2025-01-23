@@ -13,7 +13,7 @@ export default function Footer() {
         Github
       </a>
       and website hosted on
-      <a href="https://outlook-app.netlify.app/" target="blank">
+      <a href="https://vix-weather-react.netlify.app/" target="blank">
         Netlify
       </a>
     </footer>
