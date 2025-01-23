@@ -23,8 +23,8 @@ export default function FormattedDate(props) {
 
   console.log(props.date);
   return (
-    <div>
+    <span>
       {day} {hours} : {minutes}
-    </div>
+    </span>
   );
 }

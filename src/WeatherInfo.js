@@ -20,8 +20,8 @@ export default function WeatherInfo(props) {
               {props.data.description}
             </span>
             <br />
-            Humidity: <strong id="humidity">{props.data.humidity} </strong>
-            Wind: <strong id="wind"> {props.data.wind}</strong>
+            Humidity: <strong id="humidity">{props.data.humidity}% </strong>|
+            Wind: <strong id="wind"> {props.data.wind} km/h</strong>
           </p>
         </div>
         <div className="weather-app-temp-container col-lg-5 col-md-5 col-sm-5">
