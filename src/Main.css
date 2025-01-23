@@ -42,12 +42,13 @@ form .search-form-button {
   list-style: 48px;
   font-weight: 300;
   font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
   color: white;
 }
 .Main .weather-app-details {
   font-size: 18px;
   line-height: 20px;
-  font-weight: 200;
+  font-weight: 300;
   font-family: neue-haas-grotesk-display, sans-serif;
   color: white;
   margin-top: 20px;
@@ -71,7 +72,7 @@ form .search-form-button {
   color: white;
   position: relative;
   top: -65px;
-  left: 5px;
+  left: 2px;
 }
 
 .unit {
@@ -93,7 +94,7 @@ strong {
   }
   .weather-app-icon {
     width: 55px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .weather-app-unit {
     font-size: 18px;
@@ -107,7 +108,6 @@ strong {
   }
   .weather-app-icon {
     width: 55px;
-    margin-top: 15px;
   }
   .weather-app-unit {
     font-size: 16px;
