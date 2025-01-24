@@ -9,7 +9,6 @@ function App() {
       <div className="App card p-3">
         <Header />
         <Weather city="London" />
-
         <Footer />
       </div>
     </div>
