@@ -15,7 +15,7 @@ Below is the initial wireframe design for the Outlook Weather app to visualize t
 - **Real-time Weather Information:** View temperature, humidity, wind speed and more for any city.
 - **Global Coverage:** Provides weather forecasts for locations worldwide.
 - **Geolocation Support:** Automatically fetch weather for your current location.
-- **Responsive Design:** Seamless experience across desktop, tablet, and mobile devices.
+- **Responsive Design:** Seamless experience across desktop, tablet and mobile devices.
 - **Dynamic Weather Icons:** Clear visual indicators for different weather conditions using the [Meteocons](https://github.com/basmilius/weather-icons?tab=readme-ov-file) weather icons.
 - **Search Functionality:** Easily search weather conditions by city name.
 
@@ -37,7 +37,3 @@ This project was part of the SheCodes Front-End Coding Bootcamp, where I applied
 ## 🌍 Deployment
 
 This project is deployed on Netlify.
-
-## 📝 License
-
-This project is licensed under the MIT License. Feel free to use, modify, and distribute.
