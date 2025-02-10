@@ -15,6 +15,14 @@ form .search-form-input::placeholder {
   font-family: neue-haas-grotesk-display, sans-serif;
 }
 
+input[type="search"] {
+  font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
 form .search-form-button {
   border: 1px solid white;
   background-color: transparent;
@@ -111,12 +119,28 @@ strong {
 
 @media (max-width: 525px) {
   .Main .weather-app-city {
-    font-size: 48px;
+    font-size: 36px;
+  }
+  .Main .weather-app-details {
+    font-size: 16px;
+    line-height: 18px;
   }
   .weather-app-icon {
     width: 55px;
+    margin-top: 0px;
+  }
+  .weather-app-temp {
+    font-size: 54px;
+    line-height: 55px;
   }
   .weather-app-unit {
-    font-size: 16px;
+    font-size: 14px;
+    top: -30px;
+  }
+  form .search-form-input {
+    width: 100%;
+  }
+  form .search-form-button {
+    padding: 15px 20px;
   }
 }
