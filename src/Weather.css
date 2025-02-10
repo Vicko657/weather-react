@@ -17,6 +17,7 @@ form .search-form-input::placeholder {
 
 input[type="search"] {
   font-family: neue-haas-grotesk-display, sans-serif;
+  color: white;
 }
 
 input:focus {
