@@ -119,6 +119,9 @@ strong {
 }
 
 @media (max-width: 525px) {
+  .Main {
+    padding: 30px 0 10px 0;
+  }
   .Main .weather-app-city {
     font-size: 36px;
   }
