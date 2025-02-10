@@ -1,8 +1,8 @@
 # Outlook Weather App 🌦️ (Responsive)
 
-Welcome to **Outlook**, a weather application that provides real-time weather details for any location in the world using React.js. This project was developed as part of my journey in the SheCodes Front-End Coding Bootcamp to enhance my front-end development skills.
+Welcome to **Outlook**, a weather application that provides real-time weather details for any location in the world using React.js. This project was developed as part of my journey in the SheCodes Front-End Coding Bootcamp to enhance my development skills.
 
-🔗[Live Demo](https://vix-weather-react.netlify.app/)
+🔗 [Live Demo](https://vix-weather-react.netlify.app/)
 
 ## 📐 Wireframe Design
 
