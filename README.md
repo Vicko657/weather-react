@@ -12,26 +12,27 @@ Below is the initial wireframe design for the Outlook Weather app to visualize t
 
 ## 🗂️ Features
 
-• **Real-time Weather Information:** View temperature, humidity, wind speed and more for any city.
-• **Global Coverage:** Provides weather forecasts for locations worldwide.
-• **Geolocation Support:** Automatically fetch weather for your current location.
-• **Responsive Design:** Seamless experience across desktop, tablet, and mobile devices.
-• **Dynamic Weather Icons:** Clear visual indicators for different weather conditions using the [Meteocons](https://github.com/basmilius/weather-icons?tab=readme-ov-file) weather icons.
-• **Search Functionality:** Easily search weather conditions by city name.
+- **Real-time Weather Information:** View temperature, humidity, wind speed and more for any city.
+- **Global Coverage:** Provides weather forecasts for locations worldwide.
+- **Geolocation Support:** Automatically fetch weather for your current location.
+- **Responsive Design:** Seamless experience across desktop, tablet, and mobile devices.
+- **Dynamic Weather Icons:** Clear visual indicators for different weather conditions using the [Meteocons](https://github.com/basmilius/weather-icons?tab=readme-ov-file) weather icons.
+- **Search Functionality:** Easily search weather conditions by city name.
 
 ## Tech Stack
 
-• **Frontend:** HTML, CSS, Javascript & React.js.
-• **API:** OpenWeatherMap API & Shecode Weather API.
-• **Design & Styling:** Figma & CSS/SCSS.
-• **Deployment:** Netlify
+- **Frontend:** HTML, CSS, Javascript & React.js.
+- **API:** OpenWeatherMap API & Shecode Weather API.
+- **Design & Styling:** Figma & CSS/SCSS.
+- **Deployment:** Netlify
 
 ## 📚 Learning Experience
 
 This project was part of the SheCodes Front-End Coding Bootcamp, where I applied concepts such as:
-• API integration
-• State management in React
-• Responsive design principles
+
+- API integration
+- State management in React
+- Responsive design principles
 
 ## 🌍 Deployment
 
