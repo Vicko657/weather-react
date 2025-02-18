@@ -37,9 +37,9 @@ export default function WeatherForecast(props) {
     );
   } else {
     const apiKey = process.env.REACT_APP_WEATHER_ANON_KEY;
-    let longitude = props.coordinates.longitude;
-    let latitude = props.coordinates.latitude;
-    let url = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
+    const longitude = props.coordinates.longitude;
+    const latitude = props.coordinates.latitude;
+    const url = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
 
     axios.get(url).then(handleResponse);
     return null;

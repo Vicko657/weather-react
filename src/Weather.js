@@ -24,7 +24,11 @@ export default function Main(props) {
 
   function search() {
     const apiKey = process.env.REACT_APP_WEATHER_ANON_KEY;
-    let url = `https://api.shecodes.io/weather/v1/current?query=${cityName}&key=${apiKey}&units=metric`;
+    if (!apiKey) {
+      console.error("API key is undefined. Please check your .env file.");
+      return;
+    }
+    const url = `https://api.shecodes.io/weather/v1/current?query=${cityName}&key=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
   }
 
