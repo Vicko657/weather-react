@@ -23,7 +23,7 @@ export default function Main(props) {
   }
 
   function search() {
-    const apiKey = process.env.REACT_APP_WEATHER_ANON_KEY;
+    const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
     if (!apiKey) {
       console.error("API key is undefined. Please check your .env file.");
       return;
