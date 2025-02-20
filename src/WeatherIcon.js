@@ -21,6 +21,7 @@ export default function WeatherIcon(props) {
     "mist-day": "mist",
     "mist-night": "mist",
   };
+
   return (
     <div id="icon">
       <img

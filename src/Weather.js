@@ -9,16 +9,27 @@ export default function Main(props) {
   const [cityName, setCityName] = useState(props.city);
 
   function handleResponse(response) {
+    const { data } = response;
+    const { coordinates, temperature, wind, city, time, condition } = data;
+    console.log(data);
+    const { feels_like, pressure, ...filteredTemperature } = temperature;
+    const { current, humidity } = filteredTemperature;
+    const { degree, ...filteredWind } = wind;
+    const { speed } = filteredWind;
+    const windSpeed = speed;
+    const { icon_url, ...filteredCondition } = condition;
+    const { description, icon } = filteredCondition;
+
     setWeatherData({
       loaded: true,
-      coord: response.data.coordinates,
-      temperature: Math.round(response.data.temperature.current),
-      wind: response.data.wind.speed,
-      city: response.data.city,
-      date: new Date(response.data.time * 1000),
-      description: response.data.condition.description,
-      humidity: response.data.temperature.humidity,
-      icon: response.data.condition.icon,
+      coordinates,
+      temperature: Math.round(current),
+      windSpeed,
+      city,
+      date: new Date(time * 1000),
+      description,
+      humidity,
+      icon,
     });
   }
 
@@ -56,7 +67,7 @@ export default function Main(props) {
           <input type="submit" value="Search" className="search-form-button" />
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast coordinates={weatherData.coord} />
+        <WeatherForecast coord={weatherData.coordinates} />
       </div>
     );
   } else {
