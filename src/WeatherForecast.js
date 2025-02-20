@@ -6,10 +6,11 @@ import WeatherForecastDay from "./WeatherForecastDay";
 export default function WeatherForecast(props) {
   const [loader, setLoader] = useState(false);
   const [forecast, setForecast] = useState(null);
+  const coordinate = props.coord;
 
   useEffect(() => {
     setLoader(false);
-  }, [props.coord]);
+  }, [coordinate]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
@@ -37,7 +38,7 @@ export default function WeatherForecast(props) {
     );
   } else {
     const apiKey = process.env.REACT_APP_WEATHER_API_KEY;
-    const { longitude, latitude } = props.coord;
+    const { longitude, latitude } = coordinate;
     const url = `https://api.shecodes.io/weather/v1/forecast?lon=${longitude}&lat=${latitude}&key=${apiKey}&units=metric`;
     axios.get(url).then(handleResponse);
     return null;

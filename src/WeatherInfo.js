@@ -6,7 +6,6 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
   const { temperature, windSpeed, city, date, description, humidity, icon } =
     props.data;
-  console.log(props.data);
   return (
     <main className="Main">
       <div className="weather-app-data rows">
