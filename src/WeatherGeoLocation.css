@@ -1,0 +1,13 @@
+.Geobutton {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.Geobutton i {
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+.Geobutton i:hover {
+  opacity: 0.5;
+}
